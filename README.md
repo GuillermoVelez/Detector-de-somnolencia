@@ -32,8 +32,8 @@ Si queremos realizar el monitoreo a través del celular, debemos tener instalada
 cap = cv2.VideoCapture("http://192.168.1.107:8080/video")
 ```
 
-<img src="imagenesReadme/App.jpeg" width="400">
-<img src="imagenesReadme/AppServer.jpeg" width="400" height="275">
+<img src="imagenesReadme/App.jpeg" width="450">
+<img src="imagenesReadme/AppServer.jpeg" width="450" height="275">
 
 Ya con esto convertimos nuestro télefono en una cámara web, y ahora si podemos proceder a realizar la detección a través del movil.
 
