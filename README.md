@@ -22,15 +22,15 @@ Inmediatamente después de esto aparecera nuestro menú en donde se nos pedira s
 ![Menu](imagenesReadme/Menu.png)
 ##### Diagnosticador PC
 Una vez escogemos la opción del pc , el programa activara nuestra camara web e iniciara el diagnosticador.
-![Abierto](imagenesReadme/Abierto.png = 250px)
-![Cerrado](imagenesReadme/Cerrado.png = 250px)
+![Abierto](imagenesReadme/Abierto.png = 250x)
+![Cerrado](imagenesReadme/Cerrado.png = 250x)
 ##### Diagnosticador Celular
 Si queremos realizar el monitoreo a través del celular, debemos tener instalada la aplicación IP Webcam y así utilizar nuestro teléfono como una cámara web. Antes de colocar la opcion de realizar el diágnostico por movil, entramos a la aplicación IP Webcam y debemos iniciar el servidor, copiar la ruta del servidor y reemplazarla en la siguiente línea del arhcivo "drowsiness detection.py"
 ```python
 cap = cv2.VideoCapture("http://192.168.1.107:8080/video")
 ```
 ![App](imagenesReadme/App.jpeg = 250px)
-![AppServer](imagenesReadme/AppServer.jpeg = 250px)
+![AppServer](imagenesReadme/AppServer.jpeg = 250x)
 Ya con esto convertimos nuestro télefono en una cámara web, y ahora si podemos proceder a realizar la detección a través del movil.
-![AbiertoCel](imagenesReadme/AbiertoCel.png = 250px)
-![CerradoCel](imagenesReadme/CerradoCel.png = 250px)
+![AbiertoCel](imagenesReadme/AbiertoCel.png = 250x)
+![CerradoCel](imagenesReadme/CerradoCel.png = 250x)
