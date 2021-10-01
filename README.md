@@ -33,7 +33,7 @@ cap = cv2.VideoCapture("http://192.168.1.107:8080/video")
 ```
 
 <img src="imagenesReadme/App.jpeg" width="350">
-<img src="imagenesReadme/AppServer.jpeg" width="350" height="400">
+<img src="imagenesReadme/AppServer.jpeg" width="350" height="275">
 
 Ya con esto convertimos nuestro télefono en una cámara web, y ahora si podemos proceder a realizar la detección a través del movil.
 
