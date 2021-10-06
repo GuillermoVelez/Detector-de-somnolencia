@@ -30,7 +30,7 @@ opcion=input()
 opcion= int(opcion)
 lbl=['Cerrado','Abierto']
 
-model = load_model('models/cnncat2.h5') #Cargamos nuestro modelo ya entrenado
+model = load_model('models/Modelo.h5') #Cargamos nuestro modelo ya entrenado
 path = os.getcwd() #Devuelve el directorio actual del proceso 
 
 if(opcion==1):

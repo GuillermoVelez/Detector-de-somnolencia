@@ -10,7 +10,6 @@ from keras.models import load_model
 
 
 def generator(dir, gen=image.ImageDataGenerator(rescale=1./255), shuffle=True,batch_size=1,target_size=(24,24),class_mode='categorical' ):
-
     return gen.flow_from_directory(dir,batch_size=batch_size,shuffle=shuffle,color_mode='grayscale',class_mode=class_mode,target_size=target_size)
 
 BS= 32
@@ -24,15 +23,15 @@ print(SPE,VS)
 
 model = Sequential([
 
-    Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(24,24,1)), #Capa convolusional 1
+    Conv2D(filters=32, kernel_size=(3, 3), activation='relu', input_shape=(24,24,1)), #Capa convolusional 1
     MaxPooling2D(pool_size=(1,1)),
 
 
-    Conv2D(32,kernel_size=(3,3),activation='relu'), #Capa convolusional 2
+    Conv2D(filters=32,kernel_size=(3,3),activation='relu'), #Capa convolusional 2
     MaxPooling2D(pool_size=(1,1)),
 
 
-    Conv2D(64,kernel_size=(3, 3),activation='relu'), #Capa convolusional 3
+    Conv2D(filters=64,kernel_size=(3, 3),activation='relu'), #Capa convolusional 3
     MaxPooling2D(pool_size=(1,1)),
 
     
@@ -46,7 +45,7 @@ model = Sequential([
 
     Dropout(0.5), #Apagamos el 50% de las imagenes a cada paso
 
-    Dense(2, activation='softmax') #Capa softmax
+    Dense(4, activation='softmax') #Capa softmax
 
 ])
 
